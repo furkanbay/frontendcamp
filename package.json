@@ -1,0 +1,23 @@
+{
+  "name": "furkan",
+  "version": "1.0.0",
+  "description": "A demo project made for learning node.js and express  .",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furkanbay/frontendcamp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/furkanbay/frontendcamp/issues"
+  },
+  "homepage": "https://github.com/furkanbay/frontendcamp#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "nunjucks": "^3.0.1"
+  }
+}

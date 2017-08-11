@@ -1,0 +1,40 @@
+<!DOCTYPE html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Frontendcamp Express Ex</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+      .box {
+        list-style:none;
+        margin:20px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f3f3f3;
+      }
+      .box:hover {
+        -webkit-box-shadow: 0px 0px 32px -3px rgba(0,0,0,0.44);
+        -moz-box-shadow: 0px 0px 32px -3px rgba(0,0,0,0.44);
+        box-shadow: 0px 0px 32px -3px rgba(0,0,0,0.44);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-center">
+      <h1>
+        {{posts.length}} adet sehir listelendi...
+      </h1>
+    </div>
+    <div>
+      <ul>
+        {% for post in posts %}
+          <li class="col-md-3 box">
+            <h3 class="text-center">{{post.title}}</h3>
+            <p style="height:40px; overflow:hidden;">{{post.body}}</p>
+            <p class="text-right"><a href="{{post.id}}">DEVAMI</a></p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>
